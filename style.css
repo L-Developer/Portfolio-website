@@ -1,0 +1,58 @@
+@keyframes enlarge{
+  from{
+    width: 2vmax;
+  }
+  to{
+    width: 3vmax;
+  }
+}
+
+@keyframes shrink{
+   from{
+    width: 3vmax;
+  }
+  to{
+    width: 2vmax;
+  } 
+}
+
+body{
+  background: #302f30;
+  cursor: url('images/curser.png'),auto;
+}
+
+#domaine{
+  color: #a6a6a6;
+  font-family: 'Hind', sans-serif;
+  margin: 5vmax;
+  text-align: center;
+}
+
+#textparagraph{
+  color: #a6a6a6;
+  font-family: 'Space Mono', monospace;
+  margin: auto;
+  text-align: center;
+  max-width: 35%;
+}
+
+#frontimage{
+  border-radius: 50%;
+  width: 25%; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#githubsocial{
+  width: 2vmax;
+  animation: shrink 0.75s;
+  margin: 1vmin;
+  position: absolute;
+  left: 48.7%; 
+}
+
+#githubsocial:hover{
+  animation: enlarge 0.75s;
+  width: 3vmax;
+}
